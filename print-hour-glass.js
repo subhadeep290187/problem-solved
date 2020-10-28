@@ -21,5 +21,7 @@ for(let i=0; i<rowLen; i++){
     }
     
   }
+
+  // output
   console.log(row)
 }
