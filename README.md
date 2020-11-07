@@ -1,4 +1,4 @@
 This is used to see solved so coding challenges problem
 
-1. install npm serve
-2. run serve {your folder location}
+1. npm  install -g serve
+2. serve {your folder location}
