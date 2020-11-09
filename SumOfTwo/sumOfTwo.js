@@ -1,16 +1,13 @@
+
 function sumIndex(arr=[], expected){
-    arr.every((item, i)=>{
-        let nextRequiredItem = expected - item;
+    for(let i = 0; i<arr.length; i++){
+        let nextRequiredItem = expected - arr[i];
   
         if(arr.indexOf(nextRequiredItem)>0){
-          console.log(`[${i}, ${arr.indexOf(nextRequiredItem)}]`);
-          return false;
-        }else{
-          return true;
+          return `[${i}, ${arr.indexOf(nextRequiredItem)}]`;
         }
-  
-    })
+    }
+    return '[-1, -1]';
   }
-  
-  
-  sumIndex([2,3,7,4,8], 7);
+
+  console.log(sumIndex([2,3,7,4,8],7));
