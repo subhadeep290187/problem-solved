@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trace BOX</title>
+</head>
+<style>
+    .box-container{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
+    button{
+        border: none;
+        outline: none;
+    }
+    .box{
+        width: 50px;
+        height: 50px;
+        margin: 1px;
+        background-color: rgb(0, 0, 0);
+    }
+    .box:focus{
+        background-color: rgb(241, 241, 18)!important;
+    }
+
+</style>
+<body>
+    <div id="mainContainer"> </div>
+    <div id="output"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
